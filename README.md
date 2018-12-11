@@ -8,6 +8,7 @@ Smart and simple Next.js starter kit for complex apps based on React with Reason
  - React
  - Reason/ReasonReact
  - Ant Design
+ - Storybook
  - Prettier & ESlint
  - Babel
  - LESS, PostCSS
