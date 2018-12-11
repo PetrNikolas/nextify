@@ -1,6 +1,6 @@
 # Nextify
 
-* Smart and simple Next.js starter kit for complex apps based on React.
+Smart and simple Next.js starter kit for complex apps based on React.
 
 ## Main libs
 
@@ -8,7 +8,6 @@
  - React
  - Ant Design
  - PostCSS
- - Normalize.css
  - Jest & Enzyme
  - SEO & analytics
 
