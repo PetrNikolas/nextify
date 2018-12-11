@@ -15,7 +15,11 @@ const Nav = () => (
         <Link prefetch href="/">
           <a>Home</a>
         </Link>
+        <Link prefetch href="/about">
+          <a>About</a>
+        </Link>
       </li>
+
       <ul>
         {links.map(({ key, href, label }) => (
           <li key={key}>
@@ -51,6 +55,7 @@ const Nav = () => (
         color: #067df7;
         text-decoration: none;
         font-size: 13px;
+        padding: 5px 10px;
       }
     `}</style>
   </nav>

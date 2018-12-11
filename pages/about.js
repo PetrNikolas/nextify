@@ -2,14 +2,14 @@ import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
 
-const Home = () => (
+const About = () => (
   <div>
-    <Head title="Home" />
+    <Head title="About" />
 
     <div className="hero">
-      <h1 className="title">Welcome to Nextify!</h1>
+      <h1 className="title">About page!</h1>
       <p className="description">
-        To get started, edit <code>pages/index.js</code> and save to reload.
+        To get started, edit <code>pages/about.js</code> and save to reload.
       </p>
     </div>
 
@@ -33,4 +33,4 @@ const Home = () => (
   </div>
 )
 
-export default Home
+export default About
