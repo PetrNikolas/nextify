@@ -5,28 +5,28 @@ import { initGA, logPageView } from '../utils/analytics'
 import '../styles.less'
 
 export default class MyApp extends App {
-  static async getInitialProps ({ Component, router, ctx }) {
-    let pageProps = {}
+	static async getInitialProps({ Component, router, ctx }) {
+		let pageProps = {}
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps(ctx)
-    }
+		if (Component.getInitialProps) {
+			pageProps = await Component.getInitialProps(ctx)
+		}
 
-    return { pageProps }
-  }
+		return { pageProps }
+	}
 
-  componentDidMount () {
-    initGA()
-    logPageView()
-    Router.router.events.on('routeChangeComplete', logPageView)
-  }
+	componentDidMount() {
+		initGA()
+		logPageView()
+		Router.router.events.on('routeChangeComplete', logPageView)
+	}
 
-  render () {
-    const { Component, pageProps } = this.props
-    return (
-      <Container>
-        <Component {...pageProps} />
-      </Container>
-    )
-  }
+	render() {
+		const { Component, pageProps } = this.props
+		return (
+			<Container>
+				<Component {...pageProps} />
+			</Container>
+		)
+	}
 }

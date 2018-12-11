@@ -7,20 +7,20 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import Nav from '../components/nav'
 
 export default class MyDocument extends Document {
-  render () {
-    return (
-      <html>
-        <Head>
-          <link rel='stylesheet' href='/_next/static/css/styles.chunk.css' />
-        </Head>
-        <body>
-          <Nav />
+	render() {
+		return (
+			<html>
+				<Head>
+					<link rel="stylesheet" href="/_next/static/css/styles.chunk.css" />
+				</Head>
+				<body>
+					<Nav />
 
-          <Main />
+					<Main />
 
-          <NextScript />
-        </body>
-      </html>
-    )
-  }
+					<NextScript />
+				</body>
+			</html>
+		)
+	}
 }
