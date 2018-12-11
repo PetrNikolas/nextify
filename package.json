@@ -13,7 +13,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "lint:prettier": "prettier --write 'pages/*.{ts,tsx,js,jsx,md,re}' && prettier --write 'components/*.{ts,tsx,js,jsx,md,re}'"
+    "lint:prettier": "prettier --write 'pages/*.{ts,tsx,js,jsx,md,re}' && prettier --write 'components/*.{ts,tsx,js,jsx,md,re}'",
+    "lint:eslint": "eslint pages/**/*.js components/**/*.js"
   },
   "dependencies": {
     "@zeit/next-less": "^1.0.1",
@@ -40,6 +41,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-standard": "^4.0.0",
     "jest": "^23.6.0",
     "postcss": "^7.0.6",
