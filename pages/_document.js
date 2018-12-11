@@ -4,6 +4,7 @@ You have to include it into the page using either next/head or a custom _documen
 */
 
 import Document, { Head, Main, NextScript } from 'next/document'
+import Nav from '../components/nav'
 
 export default class MyDocument extends Document {
   render () {
@@ -13,7 +14,10 @@ export default class MyDocument extends Document {
           <link rel='stylesheet' href='/_next/static/css/styles.chunk.css' />
         </Head>
         <body>
+          <Nav />
+
           <Main />
+
           <NextScript />
         </body>
       </html>
