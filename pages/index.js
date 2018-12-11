@@ -2,8 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
 
-import '../styles.less'
-
 const Home = () => (
   <div>
     <Head title="Home" />

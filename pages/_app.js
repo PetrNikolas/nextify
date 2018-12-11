@@ -2,6 +2,7 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import Router from 'next/router'
 import { initGA, logPageView } from '../utils/analytics'
+import '../styles.less'
 
 export default class MyApp extends App {
   static async getInitialProps ({ Component, router, ctx }) {
