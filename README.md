@@ -6,6 +6,7 @@ Smart and simple Next.js starter kit for complex apps based on React.
 
  - Next.js
  - React
+ - Reason/ReasonReact
  - Ant Design
  - Prettier
  - LESS, PostCSS
