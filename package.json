@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "export": "next export",
+    "dev": "concurrently \"bsb -clean-world -make-world -w\" \"next dev\"",
+    "build": "bsb -clean-world -make-world && next build",
+    "export": "yarn build && next export",
     "start": "next start",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -14,14 +14,18 @@
   },
   "dependencies": {
     "@zeit/next-less": "^1.0.1",
+    "babel-plugin-bucklescript": "^0.5.3",
     "less": "^3.9.0",
     "moment": "^2.22.2",
     "next": "^7.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-ga": "^2.5.6"
+    "react-ga": "^2.5.6",
+    "reason-react": "^0.5.3"
   },
   "devDependencies": {
+    "bs-platform": "^4.0.8",
+    "concurrently": "^4.1.0",
     "cssnano": "^4.1.7",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",

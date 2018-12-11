@@ -38,7 +38,6 @@ yarn build
 
 ```bash
 # Export static html to the out folder
-yarn build
 yarn export
 ```
 
