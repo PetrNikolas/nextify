@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import ReactGA from 'react-ga'
 
 export const initGA = () => {

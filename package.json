@@ -17,7 +17,9 @@
   },
   "dependencies": {
     "@zeit/next-less": "^1.0.1",
+    "antd": "^3.11.2",
     "babel-plugin-bucklescript": "^0.5.3",
+    "babel-plugin-import": "^1.11.0",
     "less": "^3.9.0",
     "moment": "^2.22.2",
     "next": "^7.0.2",
@@ -27,11 +29,18 @@
     "reason-react": "^0.5.3"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.2.0",
     "bs-platform": "^4.0.8",
     "concurrently": "^4.1.0",
     "cssnano": "^4.1.7",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
+    "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "jest": "^23.6.0",
     "postcss": "^7.0.6",
     "postcss-browser-reporter": "^0.5.0",

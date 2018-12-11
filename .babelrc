@@ -3,6 +3,14 @@
     "next/babel"
   ],
   "plugins": [
-    "babel-plugin-bucklescript"
+    "babel-plugin-bucklescript",
+    ["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }],
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "style": true
+      }
+    ]
   ]
 }

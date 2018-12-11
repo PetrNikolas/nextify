@@ -1,61 +1,57 @@
 import React from 'react'
 import Link from 'next/link'
+import { Layout, Menu } from 'antd'
+
+const { Header } = Layout
 
 const links = [{ href: 'https://github.com/PetrNikolas/nextify', label: 'Download from Github' }].map(link => {
-	link.key = `nav-link-${link.href}-${link.label}`
+	link.key = 3
 	return link
 })
 
 const Nav = () => (
-	<nav>
-		<ul>
-			<li>
-				<Link prefetch href="/">
-					<a>Home</a>
-				</Link>
-				<Link prefetch href="/about">
-					<a>About</a>
-				</Link>
-			</li>
+	<div>
+		<Header style={{ height: '64px', background: '#fff', boxShadow: '0 3px 20px rgba(0,0,0,.1)' }}>
+			<div className="logo">Nextify</div>
 
-			<ul>
+			<Menu
+				mode="horizontal"
+				defaultSelectedKeys={['1']}
+				style={{ lineHeight: '63px' }}
+			>
+				<Menu.Item key="1">
+					<Link prefetch href="/">
+						<a>Home</a>
+					</Link>
+				</Menu.Item>
+
+				<Menu.Item key="2">
+					<Link prefetch href="/about">
+						<a>About</a>
+					</Link>
+				</Menu.Item>
+
 				{links.map(({ key, href, label }) => (
-					<li key={key}>
+					<Menu.Item key={key}>
 						<Link href={href}>
 							<a>{label}</a>
 						</Link>
-					</li>
+					</Menu.Item>
 				))}
-			</ul>
-		</ul>
+			</Menu>
+		</Header>
 
 		<style jsx>{`
-			:global(body) {
-				margin: 0;
-				font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir, Helvetica, sans-serif;
-			}
-			nav {
-				text-align: center;
-			}
-			ul {
-				display: flex;
-				justify-content: space-between;
-			}
-			nav > ul {
-				padding: 4px 16px;
-			}
-			li {
-				display: flex;
-				padding: 6px 8px;
-			}
-			a {
-				color: #067df7;
-				text-decoration: none;
-				font-size: 13px;
-				padding: 5px 10px;
+			.logo {
+			  width: 120px;
+			  height: 31px;
+			  margin: 8px 24px 16px 0;
+			  float: left;
+				font-size: 32px;
+				color: #002300;
 			}
 		`}</style>
-	</nav>
+	</div>
 )
 
 export default Nav
