@@ -97,10 +97,6 @@ Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.
 now --docker -e API_URL="https://example.com"
 ```
 
-## Configuration SEO, Sentry etc
-
-* Set SEO & analytics variables: `globals/env.js`
-
 ## Ant Design documentation
 
 * [Doc](https://ant.design/docs/react/introduce)
