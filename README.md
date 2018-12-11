@@ -50,6 +50,53 @@ yarn test:watch
 yarn test:coverage
 ```
 
+## With Docker
+
+### How to use
+
+#### Using `create-next-app`
+
+Execute [`create-next-app`](https://github.com/segmentio/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+
+```bash
+npx create-next-app --example with-docker with-docker-app
+# or
+yarn create next-app --example with-docker with-docker-app
+```
+
+#### Download manually
+
+Download the example:
+
+```bash
+curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-docker
+cd with-docker
+```
+
+Build it with docker:
+
+```bash
+# build
+docker build -t next-app .
+# or, use multi-stage builds to build a smaller docker image
+docker build -t next-app -f ./Dockerfile.multistage .
+```
+
+Run it:
+
+```bash
+docker run --rm -it \
+  -p 3000:3000 \
+  -e "API_URL=https://example.com" \
+  next-app
+```
+
+Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download))
+
+```bash
+now --docker -e API_URL="https://example.com"
+```
+
 ## Configuration SEO, Sentry etc
 
 * Set SEO & analytics variables: `globals/env.js`

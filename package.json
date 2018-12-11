@@ -12,6 +12,8 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "less": "^3.9.0",
     "moment": "^2.22.2",
     "next": "^7.0.2",
     "react": "^16.6.3",
