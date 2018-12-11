@@ -1,6 +1,6 @@
 # Nextify
 
-Smart and simple Next.js starter kit for complex apps based on React.
+Smart and simple Next.js starter kit for complex apps based on React with Reason/ReasonReact support!
 
 ## Main libs
 
