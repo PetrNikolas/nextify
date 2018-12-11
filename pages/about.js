@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from '../components/head'
+import Head from '../components/_head'
 
 const About = () => (
 	<div>
